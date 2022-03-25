@@ -1,3 +1,143 @@
+/* General style */
+body {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+#container {
+  padding: 5%;
+}
+
+#leadership, #core-team, #sponsors {
+  margin: 5em 0;
+}
+
+h2 {
+  font-size: xx-large;
+  margin-bottom: 1em;
+}
+
+p {
+  color: #586283;
+  font-size: large;
+}
+
+.leader {
+  margin-bottom: 4em;
+}
+
+.leader-fig {
+  margin-left: 0.5em;
+}
+
+.leader-img {
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+}
+
+.leader-socials {
+  margin-left: 0.5em;
+}
+
+.contact-img {
+  height: 20px;
+  margin-right: 0.5em;
+}
+
+.team-member {
+  margin-bottom: 4em;
+}
+
+.team-member-fig {
+  margin-left: 0.5em;
+}
+
+.team-member-img {
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+}
+
+.team-member-socials {
+  margin-left: 0.5em;
+}
+
+#sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sponsor-img {
+  width: 200px;
+  margin: 2em;
+}
+
+/* For medium screen */
+@media (min-width: 600px) {
+  #container {
+    padding: 5%;
+  }
+  #leaders {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    justify-items: center;
+  }
+  #team-members {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    justify-items: center;
+  }
+  #sponsors {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    justify-items: center;
+  }
+}
+
+/* For large screen */
+@media (min-width: 1050) {
+  #container {
+    padding: 10%;
+  }
+  #leaders {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    justify-items: center;
+  }
+  #team-members {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    justify-items: center;
+  }
+  #sponsors {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    justify-items: center;
+  }
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
