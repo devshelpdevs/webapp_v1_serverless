@@ -266,7 +266,7 @@ header .nav-wrapper .desktop-nav .top-nav-list li a {
 }
 
 .hero .hero-ctas .ctas .cta-donate-wrapper .hero-donate-cta {
-  background-color: #0066cc;
+  background-color: #26ABD2;
   padding: 12px 24px;
   border-radius: 5px;
   text-align: center;
@@ -416,7 +416,7 @@ header .nav-wrapper .desktop-nav .top-nav-list li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #0066cc;
+  color: #26ABD2;
   text-align: center;
   text-decoration: none;
   font-weight: 500;
@@ -479,7 +479,6 @@ header .nav-wrapper .desktop-nav .top-nav-list li a {
   width: 100%;
   margin: 1rem 0;
   padding: 1rem 0 2rem 0;
-  background-color: #f2f2f2;
 }
 
 .stats-wrapper .stats .stats-intro {
@@ -560,7 +559,7 @@ header .nav-wrapper .desktop-nav .top-nav-list li a {
 }
 
 .dhd-stories .stories-wrapper .story .story-text {
-  padding: 0.5rem 0;
+  padding: 1rem;
   font-size: 0.9rem;
   text-align: center;
   font-weight: 500;
@@ -724,7 +723,7 @@ header .nav-wrapper .desktop-nav .top-nav-list li a {
 }
 
 .cta-wrapper .cta-links .cta-donate-wrapper .hero-donate-cta {
-  background-color: #0066cc;
+  background-color: #26ABD2;
   padding: 12px 24px;
   border-radius: 5px;
   display: block;
