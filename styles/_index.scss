@@ -8,6 +8,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .sub-head-3 {
     margin: 1rem 0;
+    font-size: 2rem;
 }
 header {
     width: 100%;
@@ -47,12 +48,19 @@ header {
     // border: 1px solid tomato;
     margin: 10px 0;
     padding: 20px 0 10px 0;
+    // .hero-bg-image-wrapper {
+    //     background-image: url('../images/pexels-photo-1055613.jpeg');
+    //     width: 100%;
+    //     height: 70vh;
+    // }
     .hero-details {
         .hero-1 {
             margin: 10px 0 20px 0;
             font-size: 2.5rem;
             text-align: center;
             color: $hero-color;
+            font-weight: 900;
+            font-weight: 900;
             line-height: 1.3;
         }
         .hero-2 {
@@ -85,10 +93,11 @@ header {
                     color: $white;
                     justify-content: center;
                     align-items: center;
-                    font-weight: 500;
+                    font-weight: 700;
                     vertical-align: middle;
                     .arrow-icon {
                         margin-left: 0.3rem;
+                        padding-top: 0.1rem;
                         vertical-align: middle;
                     }
                 }
@@ -189,7 +198,7 @@ header {
                             color: $blue;
                             text-align: center;
                             text-decoration: none;
-                            font-weight: 500;
+                            font-weight: 900;
                             vertical-align: middle;
                             .arrow-icon {
                                 margin-left: 0.3rem;
@@ -289,7 +298,7 @@ header {
         .story {
             width: 100%;
             box-shadow: 0 0 20px 1px rgba(201, 199, 199,0.5);
-            background-color: #fafaf07c;
+            background-color: $white;
             padding: 0.5rem 0.5rem;
             margin: 1.2rem 0;
             .story-quote-icon {
@@ -306,7 +315,8 @@ header {
                 padding: 1rem;
                 font-size: 0.9rem;
                 text-align: center;
-                font-weight: 500;
+                font-family: $para-font;
+                font-weight: 400;
             }
             .div-auth {
                 width: 4rem;
@@ -392,15 +402,13 @@ header {
             transition: 0.4s;
             margin: 0.5rem 0;
             outline: none;
-            .active , &:hover {
-                // background-color: #ccc;
+            .active , &:focus {
                 &::after {
                     content: "\2212";
                 }
             }
-            &:after {
+            &::after {
                 content: '\002B';
-                // color: #777;
                 font-weight: bold;
                 float: right;
                 margin-left: 5px;
@@ -434,7 +442,7 @@ header {
     }
     .cta-links {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 2rem 0 0 0;
         .cta-donate-wrapper {
             .hero-donate-cta {
@@ -443,7 +451,7 @@ header {
                 border-radius: 5px;
                 display: block;
                 color: $white;
-                font-weight: 500;
+                font-weight: 900;
                 text-decoration: none;
                 text-align: center;
                 .arrow-icon {
@@ -490,6 +498,7 @@ footer {
             width: 100%;
             display:flex;
             margin: 0.5rem 0;
+            margin-left: 0.5rem;
             .social {
                 margin-right: 1rem;
                 img {
@@ -502,6 +511,7 @@ footer {
         .mail-wrapper {
             width: 100%;
             margin: 0.4rem 0;
+            margin-left: 0.5rem;
             .mail {
                 text-decoration: none;
                 color: $white;
@@ -515,6 +525,7 @@ footer {
         .code-of-conduct-wrapper {
             width: 100%;
             margin: 0.4rem 0;
+            margin-left: 0.5rem;
             .code-of-conduct {
                 color: $white;
                 font-size: 0.8125rem;
@@ -529,6 +540,7 @@ footer {
             width: 100%;
             margin: 0.6rem 0 1rem 0;
             color: $white;
+            margin-left: 0.5rem;
             .copywrite {
                 font-size: 0.8125rem;
                 color: $white;
@@ -540,3 +552,336 @@ footer {
         }
     }
 }
+
+@media only screen and (min-width: 400px) {
+    .hero {
+       .hero-details {
+        .hero-1 {
+
+        }
+       }
+    }
+ }
+ 
+ // 480
+ 
+ @media only screen and (min-width: 480px) {
+    .container {
+       width: 60%;
+    }
+ }
+ 
+ // 780px
+ 
+ @media only screen and (min-width: 620px) {
+    .hero {
+        .hero-details {
+         .hero-1 {
+             font-size: 4rem;
+         }
+        }
+     }
+ }
+ 
+ 
+ // 1028 
+ 
+ @media only screen and (min-width: 1020px) {
+    .dhd-wrapper {
+        padding: 0 15%;
+    }
+
+    .hero {
+        .hero-details {
+         .hero-1 {
+             font-size: 4rem;
+             text-align: left;
+         }
+
+         .hero-2 {
+            width: 70%;
+            text-align: left;
+            font-size: 1rem;
+         }
+        }
+
+        .hero-sponsors {
+            width: 100%;
+            margin: 1rem 0;
+            .sponsor-intro {
+                font-size: 1rem;
+                text-align: left;
+                margin: 0.5rem 0 1.5rem 0;
+            }
+            .sponsors-list {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                flex-flow: row wrap;
+                align-items: center;
+                a {
+                    width: 100px;
+                    height: 30px;
+                    // border: 1px solid lime;
+                    margin: 10px 0;
+                    margin-right: 1rem;
+                    img {
+                        // border: 1px solid tomato;
+                        object-fit: contain;
+                        width: 100px;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .hero-ctas {
+            width: 100%;
+            margin: 10px 0;
+            .ctas {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                }
+                .cta-donate-wrapper {
+                    margin: 12px 0;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    .hero-donate-cta {
+                        background-color: $blue;
+                        padding: 12px 24px;
+                        border-radius: 5px;
+                        text-align: center;
+                        display: flex;
+                        color: $white;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 700;
+                        vertical-align: middle;
+                        .arrow-icon {
+                            margin-left: 0.3rem;
+                            padding-top: 0.1rem;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+     }
+
+     .moving-on-community {
+        width: 100%;
+        margin: 20px 0;
+        padding: 1rem 15%;
+        .community-effort {
+            .community-intro {
+                padding: 0;
+            }
+            .steps { 
+                width: 100%;
+                .step {
+                    display: flex;
+                    position: relative;
+                    // justify-content: space-between;
+                    flex-direction: column;
+                    // margin: 1rem 0 3rem 0;
+                    .left-step {
+                        margin: 0.5rem 0;
+                        .donate-text {
+                            font-size: 1rem;
+                        }
+                        .donate-wrapper {
+                            margin: 2rem 0 0;
+                            border-radius: 5px;
+                            .donate-cta {
+                                border-radius: 5px;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                color: $blue;
+                                text-align: center;
+                                text-decoration: none;
+                                font-weight: 900;
+                                vertical-align: middle;
+                                font-size: 1.1rem;
+                                .arrow-icon {
+                                    margin-left: 0.3rem;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                    .text-section {
+                        width: 70%;
+                        background-color: $white;
+                        padding:  2rem;
+                        position: relative;
+                        top: -3rem;
+                        margin: auto 1rem;
+                        // border: 1px solid tomato;
+                        z-index: 2;
+                    }
+                    
+                    .img-section {
+                        width: 80%;
+                        height: 500px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .stats-wrapper {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0 2rem 0;
+        // background-color: $b-color;
+        .stats {
+            .stats-intro {
+                margin: 1rem 0;
+            }
+            .stats-flex {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                .statistics {
+                    .stats-text {
+                        font-size: 1rem;
+                    }
+                    margin: 0.6rem 0;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .dhd-stories {
+        width: 100%;
+        margin: 20px 0;
+        padding: 2rem 0;
+        .stories {
+            .story-intro {
+                margin: 1rem 0;
+            }
+            .story-teaser {
+                margin: 1rem 0;
+                font-size: 1rem ;
+            }
+        }
+        .stories-wrapper {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .story {
+                width: 30%;
+                box-shadow: 0 0 20px 1px rgba(201, 199, 199,0.5);
+                // background-color: #fafaf07c;
+                padding: 0.5rem 0.5rem;
+                margin: 1.2rem 0;
+                // margin-left: 0.5rem;
+                height: auto;
+                .story-quote-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0.5rem 0;
+                    .quotation {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                .story-text {
+                    padding: 0.5rem;
+                    text-align: center;
+                    font-family: $para-font;
+                    font-weight: 500;
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+                .div-auth {
+                    width: 4rem;
+                    background-color: $border-color;
+                    margin: 1rem auto;
+                    height: 0.2rem;
+                    border-radius: 10px;
+                }
+                .story-teller {
+                    padding: 0.2rem 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .avatar-box {
+                        width: 100px;
+                        height: 100px;
+                        border: 4px solid $border-color;
+                        border-radius: 100%;
+                        .avatar {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 100%;
+                            object-fit: fill;
+                        }
+                    }
+                    .story-teller-info {
+                        // width: 100%;
+                        margin: 0.5rem 0;
+                        padding: 0.2rem 0;
+                        .fullname {
+                            font-family: $para-font;
+                            font-weight: 700;
+                            font-size: 0.9rem;
+                            // color: $hero-color;
+                        }
+                        .job-title {
+                            font-family: $para-font;
+                            font-size: 0.9rem;
+                            font-weight: 700;
+                            text-align: center;
+                            // color: $hero-color;
+                        }
+                        .twitter-icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0.5rem auto;
+                            a {
+                                display: inline-block;
+                                margin: 0.4rem 0;
+                                img {
+                                    object-fit: contain;
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+
+ }
+ 
+ // 1340
+ 
+ @media only screen and (min-width: 1340px) {
+    .container {
+       width: 28%;
+    }
+ }
