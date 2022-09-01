@@ -79,7 +79,7 @@ p {
 }
 
 .sponsor-img {
-  width: 200px;
+  width: 100%;
   margin: 2em;
 }
 
@@ -91,14 +91,14 @@ p {
   #leaders {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[2];
+    -ms-grid-columns: (auto,2);
         grid-template-columns: repeat(2, auto);
     justify-items: center;
   }
   #team-members {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[2];
+    -ms-grid-columns:(auto,2) ;
         grid-template-columns: repeat(2, auto);
     justify-items: center;
   }
@@ -119,7 +119,7 @@ p {
   #leaders {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto, 3);
         grid-template-columns: repeat(3, auto);
     justify-items: center;
   }
