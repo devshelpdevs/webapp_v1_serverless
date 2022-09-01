@@ -283,7 +283,7 @@ header .nav-wrapper .desktop-nav .top-nav-list li a {
 }
 
 .hero .hero-ctas .ctas .cta-donate-wrapper .hero-donate-cta {
-  background-color: #26ABD2;
+  background-color: #B38CFC;
   padding: 12px 24px;
   border-radius: 5px;
   text-align: center;
@@ -419,11 +419,15 @@ header .nav-wrapper .desktop-nav .top-nav-list li a {
 }
 
 .moving-on-community .community-effort .steps .step .left-step .donate-wrapper {
+  width: 100%;
   margin: 2rem 0 0;
   border-radius: 5px;
 }
 
 .moving-on-community .community-effort .steps .step .left-step .donate-wrapper .donate-cta {
+  background-color: #B38CFC;
+  padding: 12px 24px;
+  width: 140px;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,11 +438,12 @@ header .nav-wrapper .desktop-nav .top-nav-list li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #26ABD2;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   font-weight: 900;
   vertical-align: middle;
+  font-size: 1rem;
 }
 
 .moving-on-community .community-effort .steps .step .left-step .donate-wrapper .donate-cta .arrow-icon {
@@ -742,7 +747,7 @@ header .nav-wrapper .desktop-nav .top-nav-list li a {
 }
 
 .cta-wrapper .cta-links .cta-donate-wrapper .hero-donate-cta {
-  background-color: #26ABD2;
+  background-color: #B38CFC;
   padding: 12px 24px;
   border-radius: 5px;
   display: block;
@@ -960,7 +965,7 @@ footer .footer-wrapper .copywrite-wrapper .footer_year {
     cursor: pointer;
   }
   .hero .hero-ctas .ctas .cta-donate-wrapper .hero-donate-cta {
-    background-color: #26ABD2;
+    background-color: #B38CFC;
     padding: 12px 24px;
     border-radius: 5px;
     text-align: center;
@@ -1024,12 +1029,12 @@ footer .footer-wrapper .copywrite-wrapper .footer_year {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #26ABD2;
+    color: #ffffff;
     text-align: center;
     text-decoration: none;
     font-weight: 900;
     vertical-align: middle;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .moving-on-community .community-effort .steps .step .left-step .donate-wrapper .donate-cta .arrow-icon {
     margin-left: 0.3rem;
