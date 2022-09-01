@@ -1,0 +1,41 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500&family=Trykker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Trykker&display=swap');
+// // font-face
+@font-face {
+    font-family: 'segoe UI';
+    src: url('../font/segoeui-regular.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoe UIbold';
+    src: url('../font/segoeui-semibold.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height:auto;
+    background-color: $white;
+    line-height: 1.5;
+    font-family: $para-font;
+}
+
+.dhd-wrapper {
+    width: 100%;
+    padding: 0 5%;
+}
+
+@media only screen and (min-width: 375px) {
+    .dhd-wrapper {
+        padding: 0 10%;
+    }
+}
