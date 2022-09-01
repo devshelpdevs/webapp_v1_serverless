@@ -730,11 +730,12 @@ footer {
                     }
                     
                     .img-section {
-                        width: 80%;
+                        width: 100%;
                         height: 500px;
                         img {
                             width: 100%;
                             height: 100%;
+                            object-fit: fill;
                         }
                     }
                 }
